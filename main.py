@@ -31,7 +31,7 @@ bot = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN)
-auth_users = [7841292070,123456796,-1002260543763,-1002397220814,-1002461666553,-1002363453684]
+#auth_users = [7841292070,123456796,-1002260543763,-1002397220814,-1002461666553,-1002363453684]
 
 
 
@@ -235,8 +235,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:❤️ @SONICKUWALSSCBOT ❤️** `{str(count).zfill(3)}. {name}{MR}.mkv`\n\n" f"**Quality:** `{res}`\n\n" f"**𝔹ᴀᴛᴄʜ** » `{raw_text0}`\n\n" f"**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ `https://sonickuwalssc.blogspot.com/` **"'
-                cc1 = f'**[📁] Pdf_ID:❤️ @SONICKUWALSSCBOT ❤️** `{str(count).zfill(3)}. {name}{MR}.pdf`\n\n**𝔹ᴀᴛᴄʜ** » `{raw_text0}`\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ `https://sonickuwalssc.blogspot.com/` **'
+                cc = f'**[📽️] Vid_ID:❤️ @SONICKUWALSSCBOT ❤️** `{str(count).zfill(3)}. {name}{MR}.mkv`\n\n**Quality:** `{res}`\n\n**𝔹ᴀᴛᴄʜ** » `{raw_text0}`\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ https://sonickuwalssc.blogspot.com/**'
+                cc1 = f'**[📁] Pdf_ID:❤️ @SONICKUWALSSCBOT ❤️** `{str(count).zfill(3)}. {name}{MR}.pdf`\n\n**𝔹ᴀᴛᴄʜ** » `{raw_text0}`\n\n**𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 ➤ https://sonickuwalssc.blogspot.com/**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
