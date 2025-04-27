@@ -49,13 +49,13 @@ async def start(bot: Client, m: Message):
                     InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/SONICKUWALSSCBOT") ]                               
             ]))
     
-@bot.on_message(filters.command("stop")))
+@bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
     await m.reply_text("**Stopped**🚦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["txt"])))
+@bot.on_message(filters.command(["txt"]))
 async def upload(bot: Client, m: Message):
     editable = await m.reply_text('𝕤ᴇɴᴅ ᴛxᴛ ғɪʟᴇ ⚡️.**\n\nDeveloper** : 🅑🅞🅣 🅜🅐🅓🅔 🅑🅨  LOVER 💖 BOY  content: @SONICKUWALSSCBOT **')
     input: Message = await bot.listen(editable.chat.id)
