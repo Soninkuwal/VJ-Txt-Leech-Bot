@@ -61,6 +61,8 @@ async def upload(bot: Client, m: Message):
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
+
+   path = f"./downloads/{m.chat.id}" 
     
     try:    
         with open(x, "r") as f:
